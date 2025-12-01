@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from company_logic import is_company_related, fetch_company_info
 from microbots import get_microbot_response
+# Import scheduler to start background updates
+import scheduler
 
 class Message(BaseModel):
     message: str
@@ -35,4 +37,3 @@ def chat(data: Message):
 
     # Otherwise give default message
     return {"reply": "Please contact admin for more details."}
-
