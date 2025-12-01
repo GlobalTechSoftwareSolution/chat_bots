@@ -22,8 +22,13 @@ app.add_middleware(
 
 @app.post("/chat")
 def chat(data: Message):
-    user_msg = data.message
-
+    user_msg = data.message.strip()
+    
+    # Handle common greetings
+    greetings = ["hi", "hello", "hlo", "hey", "good morning", "good afternoon", "good evening"]
+    if user_msg.lower() in greetings:
+        return {"reply": "Hi, I'm chatbot assistant. How can I help you today?"}
+    
     # First check if a microbot can handle this query
     microbot_response = get_microbot_response(user_msg)
     if microbot_response:
