@@ -147,7 +147,7 @@ class BlogBot(Microbot):
         3. "AI Automation in HR" - See how AI streamlines HR tasks
         
         Visit our website to read these articles and more!
-        https://globaltechsoftwaresolutions.cloud/blogs"""
+        https://hrms.globaltechsoftwaresolutions.cloud/blogs"""
 
 
 class CompanyNameBot(Microbot):

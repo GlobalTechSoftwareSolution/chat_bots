@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 
 # URL mappings for different sections
-BASE_URL = "https://globaltechsoftwaresolutions.cloud/"
+BASE_URL = "https://hrms.globaltechsoftwaresolutions.cloud/"
 ABOUT_URL = BASE_URL + "about"
 CONTACT_URL = BASE_URL + "contact"
 BLOGS_URL = BASE_URL + "blogs"
