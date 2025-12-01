@@ -89,7 +89,7 @@ class SupportBot(Microbot):
         """
         return """📧 Support Contact Information:
         
-        • Email: info@globaltechsoftwaresolutions.com
+        • Email: tech@globaltechsoftwaresolutions.com
         • Phone: +91 98442 81875
         • Address: No 10, 4th Floor, Gaduniya Complex, Ramaiah Layout, Vidyaranyapura, Bangalore - 560097
         
@@ -166,7 +166,7 @@ class CompanyNameBot(Microbot):
         """
         return """🏢 Global Tech Software Solutions
         
-        📧 Email: info@globaltechsoftwaresolutions.com
+        📧 Email: tech@globaltechsoftwaresolutions.com
         📞 Phone: +91 98442 81875
         📍 Address: No 10, 4th Floor, Gaduniya Complex, Ramaiah Layout, Vidyaranyapura, Bangalore - 560097
         
@@ -291,7 +291,7 @@ class ClientsBot(Microbot):
     """
     def __init__(self):
         super().__init__("ClientsBot", [
-            "client", "customer", "clints", "testimonial", "case study"
+            "client", "customer", "clients", "testimonial", "case study"
         ])
     
     def respond(self, message: str) -> str:
@@ -318,7 +318,7 @@ class ClientsBot(Microbot):
         • Regular progress updates
         • 24/7 support
         
-        Learn more at: https://globaltechsoftwaresolutions.com/clints"""
+        Learn more at: https://globaltechsoftwaresolutions.com/clients"""
 
 
 # Initialize all microbots
